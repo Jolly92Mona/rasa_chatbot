@@ -1,0 +1,82 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_state_name
+  - corona_cases_state
+  - check_symptoms
+  - emergency_symptoms
+  - check_person_got_coronavirus
+  - verify_symptoms
+  - zone_district_detect
+  - vaccine_info
+  - vaccine_type
+
+entities:
+  - location
+  - state
+  - symptoms
+  - district
+
+
+actions:
+  - action_house_price
+  - action_corona_cases_state
+  - action_verify_symptoms
+  - action_zone_district_detect
+
+responses:
+  utter_greet:
+  - text: "Hey there. I am Cbot - covid19 checker & tracker. how can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is some funny stuff:"
+    image: "https://imgur.com/t/christmas/krpuOC5"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_state_name:
+  - text: "can you please confirm the state name?"
+
+  utter_coronavirus_symptoms:
+    - text: "Coronavirus, or COVID-19, symptoms appear 2-14 days after exposure and include:
+    1. Fever
+    2. Cough
+    3. Shortness of breath or difficulty breathing
+    4. Repeated shaking with chills
+    5. Muscle pain
+    6. Headache
+    7. Sore throat
+    8. New loss of taste or smell"
+
+  utter_emergency_symptoms:
+    - text: "Call 911 or emergency if you have following symptoms: Trouble breathing,  Persistent pain or pressure in the chest, New confusion or inability to arouse, Bluish lips or face"
+
+  utter_check_person_got_coronavirus:
+    - text: "Could please confirm your symptoms?"
+
+  utter_vaccine_info:
+    - text: "Everyone 5 years of age and older is now eligible to get a COVID-19 vaccination. If you have been fully vaccinated with a Pfizer, Moderna or Johnson & Johnson vaccine, you may be eligible for a booster shot."
+
+  utter_vaccine_type:
+    - text: " Pfizer vaccine (BioNTech), Johnson & Johnson vaccine, Moderna vaccine (NIAID vaccine)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,192 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: ask_state_name
+  examples: |
+    - can you tell me the covid19 status?
+    - show me covid19 status
+    - covid19 status
+    - corona cases
+    - can you please show me corona cases
+
+- intent: corona_cases_state
+  examples: |
+    - [karnataka](state)
+    - [Andhra pradesh](state)
+    - [Bihar](state)
+    - [Punjab](state)
+    - [West Bengal](state)
+    - [Uttarakhand](state)
+    - [Uttar Pradesh](state)
+    - [Tripura](state)
+    - [Telangana](state)
+    - [Tamil Nadu](state)
+    - [Sikkim](state)
+    - [Rajasthan](state)
+    - [Punjab](state)
+    - [Puducherry](state)
+    - [Odisha](state)
+    - [Nagaland](state)
+    - [Meghalaya](state)
+    - [Manipur](state)
+    - [Madhya Pradesh](state)
+    - [Kerala](state)
+    - [Haryana](state)
+    - [Himachal Pradesh](state)
+    - [Gujarat](state)
+    - [Goa](state)
+    - [Delhi](state)
+    - [Chandigarh](state)
+    - [Assam](state)
+    - [Total](state)
+
+- intent: check_symptoms
+  examples: |
+    - what are the corona virus symptoms
+    - coronavirus symptoms
+    - I want to know corona virus symptoms
+    - covid19 symptoms
+
+- intent: emergency_symptoms
+  examples: |
+    - when should I see a doctor?
+    - should i see a doctor?
+    - should i go to a doctor?
+    - is it emergency?
+    - when is it emergency?
+    - should  i call at emergency number ?
+
+- intent: check_person_got_coronavirus
+  examples: |
+    - do I have coronavirus?
+    - do i have covid?
+
+- intent: verify_symptoms
+  examples: |
+    - [fever](symptoms)
+    - [cough](symptoms)
+    - [shortness of breathing or difficulty breathing](symptoms)
+    - [muscle and body aches and headache](symptoms)
+    - [congestion n runny nose](symptoms)
+    - [sore throat n cough](symptoms)
+    - [diarrhea](symptoms)
+    - [nausea](symptoms)
+    - [vomiting](symptoms)
+
+- intent: zone_district_detect
+  examples: |
+    - [New Delhi](district)
+    - [North Delhi](district)
+    - [North East Delhi](district)
+    - [South Delhi](district)
+    - [North Goa](district)
+    - [South Goa](district)
+    - [Ahmedabad](district)
+    - [Aravalli](district)
+    - [Gandhinagar](district)
+    - [Chennai](district)
+    - [Coimbatore](district)
+
+- intent: vaccine_info
+  examples: |
+    - eligible for vaccine
+    - am I eligible for booster shot?
+    - vaccine eligibility
+
+- intent: vaccine_type
+  examples: |
+    - can you please tell me the vaccine information?
+    - what vaccines are available?
+    - vaccine availability
+

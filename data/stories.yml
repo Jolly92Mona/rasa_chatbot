@@ -1,0 +1,75 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: ask state name
+  steps:
+  - intent: ask_state_name
+  - action: utter_ask_state_name
+
+- story: corona cases in each state
+  steps:
+    - intent: corona_cases_state
+    - action: action_corona_cases_state
+
+- story: check for corona virus symptoms
+  steps:
+    - intent: check_symptoms
+    - action: utter_coronavirus_symptoms
+
+- story: emergency corona symptoms
+  steps:
+    - intent: emergency_symptoms
+    - action: utter_emergency_symptoms
+
+- story: check if person got coronavirus
+  steps:
+    - intent: check_person_got_coronavirus
+    - action: utter_check_person_got_coronavirus
+
+- story: verify symptoms
+  steps:
+    - intent: verify_symptoms
+    - action: action_verify_symptoms
+
+- story: district wise zone detection
+  steps:
+    - intent: zone_district_detect
+    - action: action_zone_district_detect
+
+- story: vaccine information
+  steps:
+    - intent: vaccine_info
+    - action: utter_vaccine_info
+
+- story: vaccine type
+  steps:
+    - intent: vaccine_type
+    - action: utter_vaccine_type
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
